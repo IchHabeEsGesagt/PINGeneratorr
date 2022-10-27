@@ -9,6 +9,7 @@ PIN Generator for MacOs and Windows
 
 Open PINGeneratorr.py with Python Launcher
 tutorial on how to open files with a specific program 
+
 MacOs: https://www.macobserver.com/tips/quick-tip/macos-files-open-always/
 
 Windows: https://www.bleepingcomputer.com/tutorials/open-a-file-with-a-different-program/
