@@ -1,6 +1,8 @@
 # PINGeneratorr
 PIN Generator for MacOs and Windows
+
 **Only Tested on MacOs**
+
 **You need to have the newest version of Python (Download on www.python.org)**
 
 ***How to use***
