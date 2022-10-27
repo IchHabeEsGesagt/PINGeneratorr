@@ -24,6 +24,6 @@ Choose whatever you want.
 If you choose 3. You can now type in your custom length
 
 There will be a Message saying:
-Your Pin is: your_pin
+Your Pin is: *your pin here*
 
 If you find any bugs please report them
