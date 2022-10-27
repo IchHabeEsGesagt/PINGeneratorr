@@ -5,9 +5,12 @@ PIN Generator for MacOs and Windows
 
 **You need to have the newest version of Python (Download on www.python.org)**
 
-***How to use***
+***How to use:***
 
-Open PINGeneratorr.py via Python Launcher
+Open PINGeneratorr.py with Python Launcher
+tutorial on how to open files with a specific program 
+MacOs: https://www.macobserver.com/tips/quick-tip/macos-files-open-always/
+Windows: https://www.bleepingcomputer.com/tutorials/open-a-file-with-a-different-program/
 
 There are 3 Options
 
