@@ -3,7 +3,7 @@ import secrets
 import time
 
 
-#Programmed by me
+# Programmed by me
 
 class bcolors:
     HEADER = '\033[95m'
@@ -22,7 +22,6 @@ print(f"{bcolors.OKBLUE}{bcolors.BOLD}Visit github.com/IchHabeEsGesagt/PINGenera
 print(f"{bcolors.HEADER}**********PIN Genrator 1.3**********{bcolors.ENDC}")
 
 
-
 def pingen(lengh: int):
     combination = string.digits
 
@@ -33,6 +32,7 @@ def pingen(lengh: int):
 
     return new_pin
 
+
 print(" ")
 print("Options:")
 print(" ")
@@ -40,7 +40,6 @@ print("1. Length = 4")
 print("2. Length = 8")
 print("3. Custom Length")
 print(" ")
-
 
 while True:
 
@@ -60,50 +59,70 @@ while True:
                 print(f"{bcolors.FAIL}Hacker Mode activated{bcolors.ENDC}")
                 time.sleep(5)
                 cont = input("Stay in Hackermode? (y/n) ")
-                print(f"{bcolors.BOLD}LOADING 10%{bcolors.ENDC}")
-                time.sleep(0.5)
-                print(f"{bcolors.BOLD}LOADING 30%{bcolors.ENDC}")
-                time.sleep(0.5)
-                print(f"{bcolors.BOLD}LOADING 52%{bcolors.ENDC}")
-                time.sleep(0.5)
-                print(f"{bcolors.BOLD}LOADING 71%{bcolors.ENDC}")
-                time.sleep(0.5)
-                print(f"{bcolors.BOLD}LOADING 98%{bcolors.ENDC}")
-                time.sleep(0.5)
-                print(f"{bcolors.BOLD}LOADING 100%{bcolors.ENDC}")
-                time.sleep(1.2)
-                print(f"{bcolors.BOLD}LOADING COMPLETED{bcolors.ENDC}")
-                time.sleep(1.2)
-                print(f"{bcolors.BOLD}INSTALLING 0%{bcolors.ENDC}")
-                time.sleep(0.5)
-                print(f"{bcolors.BOLD}INSTALLING 22%{bcolors.ENDC}")
-                time.sleep(0.5)
-                print(f"{bcolors.BOLD}INSTALLING 59%{bcolors.ENDC}")
-                time.sleep(0.5)
-                print(f"{bcolors.BOLD}INSTALLING 97%{bcolors.ENDC}")
-                time.sleep(0.5)
-                print(f"{bcolors.BOLD}INSTALLING 100%{bcolors.ENDC}")
-                time.sleep(1.2)
-                print(f"{bcolors.BOLD}INSTALLING COMPLETE{bcolors.ENDC}")
-                time.sleep(3)
+                if cont == "y":
+                    print(f"{bcolors.BOLD}LOADING 10%{bcolors.ENDC}")
+                    time.sleep(0.5)
+                    print(f"{bcolors.BOLD}LOADING 30%{bcolors.ENDC}")
+                    time.sleep(0.5)
+                    print(f"{bcolors.BOLD}LOADING 52%{bcolors.ENDC}")
+                    time.sleep(0.5)
+                    print(f"{bcolors.BOLD}LOADING 71%{bcolors.ENDC}")
+                    time.sleep(0.5)
+                    print(f"{bcolors.BOLD}LOADING 98%{bcolors.ENDC}")
+                    time.sleep(0.5)
+                    print(f"{bcolors.BOLD}LOADING 100%{bcolors.ENDC}")
+                    time.sleep(1.2)
+                    print(f"{bcolors.BOLD}LOADING COMPLETED{bcolors.ENDC}")
+                    time.sleep(1.2)
+                    print(f"{bcolors.BOLD}INSTALLING 0%{bcolors.ENDC}")
+                    time.sleep(0.5)
+                    print(f"{bcolors.BOLD}INSTALLING 22%{bcolors.ENDC}")
+                    time.sleep(0.5)
+                    print(f"{bcolors.BOLD}INSTALLING 59%{bcolors.ENDC}")
+                    time.sleep(0.5)
+                    print(f"{bcolors.BOLD}INSTALLING 97%{bcolors.ENDC}")
+                    time.sleep(0.5)
+                    print(f"{bcolors.BOLD}INSTALLING 100%{bcolors.ENDC}")
+                    time.sleep(1.2)
+                    print(f"{bcolors.BOLD}INSTALLING COMPLETE{bcolors.ENDC}")
+                    time.sleep(3)
+                if cont == "n":
+                    print(f"{bcolors.BOLD}Stopping...{bcolors.ENDC}")
+                    time.sleep(2)
+                    print(f"{bcolors.BOLD}Stopped!{bcolors.ENDC}")
+                    time.sleep(1.5)
 
-                print(f"{bcolors.BOLD}{bcolors.FAIL}YOU HAVE BEEN TERMINATED{bcolors.ENDC}")
+
+                    print(f"{bcolors.BOLD}{bcolors.FAIL}YOU HAVE BEEN TERMINATED{bcolors.ENDC}")
+
 
 
     else:
         print(f"{bcolors.FAIL}Invalid Input use 1, 2 or 3{bcolors.ENDC}")
 
-    nochmal = input("Generate new PIN (y/n) ")
+    nochmal = input("Generate new PIN? (y/n) ")
 
     list = ["y", "n"]
-    if nochmal in list:
+    if nochmal in list and nochmal.isascii():
         if nochmal == "n":
+            print(f"{bcolors.BOLD}Stopping...{bcolors.ENDC}")
+            time.sleep(1)
+            print(f"{bcolors.BOLD}Stopped!{bcolors.ENDC}")
+            time.sleep(1)
             break
+
 
     else:
         print(f"{bcolors.FAIL}Invalid Input use y or n{bcolors.ENDC}")
-        print(" ")
-
+        list = ["y", "n"]
+        nochmal = input("Generate new PIN? (y/n) ")
+        if nochmal in list and nochmal.isascii():
+            if nochmal == "n":
+                print(f"{bcolors.BOLD}Stopping...{bcolors.ENDC}")
+                time.sleep(2)
+                print(f"{bcolors.BOLD}Stopped!{bcolors.ENDC}")
+                time.sleep(2)
+                break
 
 
 
