@@ -86,6 +86,7 @@ while True:
                     time.sleep(1.2)
                     print(f"{bcolors.BOLD}INSTALLING COMPLETE{bcolors.ENDC}")
                     time.sleep(3)
+                    print(f"{bcolors.BOLD}{bcolors.FAIL}YOU HAVE BEEN TERMINATED{bcolors.ENDC}")
                 if cont == "n":
                     print(f"{bcolors.BOLD}Stopping...{bcolors.ENDC}")
                     time.sleep(2)
@@ -93,7 +94,7 @@ while True:
                     time.sleep(1.5)
 
 
-                    print(f"{bcolors.BOLD}{bcolors.FAIL}YOU HAVE BEEN TERMINATED{bcolors.ENDC}")
+
 
 
 
