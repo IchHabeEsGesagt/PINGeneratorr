@@ -8,7 +8,7 @@ PIN Generator for MacOs and Windows
 ***How to use:***
 
 Open PINGeneratorr.py with Python Launcher
-tutorial on how to open files with a specific program 
+or type python3 *path of the file* for mac os or python *path of the file* on windows in the terminal
 
 MacOs: https://www.macobserver.com/tips/quick-tip/macos-files-open-always/
 
